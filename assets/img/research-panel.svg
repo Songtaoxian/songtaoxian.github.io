@@ -1,0 +1,23 @@
+<svg width="720" height="560" viewBox="0 0 720 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Research system diagram</title>
+  <desc id="desc">An abstract diagram showing perception, model, and action connected by signals.</desc>
+  <rect width="720" height="560" rx="8" fill="#EDF5F2"/>
+  <rect x="64" y="72" width="228" height="144" rx="8" fill="white" stroke="#D9E4DF" stroke-width="2"/>
+  <rect x="428" y="72" width="228" height="144" rx="8" fill="white" stroke="#D9E4DF" stroke-width="2"/>
+  <rect x="246" y="318" width="228" height="144" rx="8" fill="white" stroke="#D9E4DF" stroke-width="2"/>
+  <circle cx="178" cy="144" r="46" fill="#087F74"/>
+  <path d="M148 146C164 126 195 126 210 146C195 166 164 166 148 146Z" fill="#EDF5F2"/>
+  <circle cx="179" cy="146" r="13" fill="#17211E"/>
+  <path d="M494 128H594M494 152H574M494 176H606" stroke="#C85C3C" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="360" cy="390" r="52" fill="#B78916"/>
+  <path d="M337 390H383M360 367V413" stroke="#17211E" stroke-width="14" stroke-linecap="round"/>
+  <path d="M294 144H405" stroke="#087F74" stroke-width="8" stroke-linecap="round"/>
+  <path d="M399 126L428 144L399 162" stroke="#087F74" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M542 218C542 278 482 338 475 344" stroke="#C85C3C" stroke-width="8" stroke-linecap="round"/>
+  <path d="M495 344H475V324" stroke="#C85C3C" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M246 343C196 320 176 276 176 222" stroke="#B78916" stroke-width="8" stroke-linecap="round"/>
+  <path d="M158 244L176 222L194 244" stroke="#B78916" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="92" y="245" fill="#17211E" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Perception</text>
+  <text x="470" y="245" fill="#17211E" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">World model</text>
+  <text x="313" y="492" fill="#17211E" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Action</text>
+</svg>

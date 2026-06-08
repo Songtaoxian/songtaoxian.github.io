@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog | Tianxiao Shao</title>
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script>
+      (function () {
+        document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "light");
+        document.documentElement.setAttribute("lang", localStorage.getItem("language") || "en");
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="masthead__inner">
+        <a class="brand" href="../">Tianxiao Shao</a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="../" data-en="Research" data-zh="研究">Research</a>
+          <a href="../publications/" data-en="Publications" data-zh="论文发表">Publications</a>
+          <a href="../running/" data-en="Running" data-zh="跑步">Running</a>
+          <a class="is-active" href="./" data-en="Blog" data-zh="博客">Blog</a>
+          <a href="../cv/" data-en="CV" data-zh="简历">CV</a>
+          <button class="icon-button lang-toggle" type="button" aria-label="Toggle language"><span id="lang-label">EN</span></button>
+          <button class="icon-button theme-toggle" type="button" aria-label="Toggle theme"><i data-lucide="moon"></i></button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="profile-card compact" aria-label="Author profile">
+        <img class="avatar" src="../assets/img/avatar.svg" alt="Portrait avatar for Tianxiao Shao" />
+        <h1>Tianxiao Shao</h1>
+        <p class="bio" data-en="Notes on research systems, tools, and experiments." data-zh="关于研究系统、工具与实验的笔记。">
+          Notes on research systems, tools, and experiments.
+        </p>
+        <ul class="profile-list">
+          <li><i data-lucide="rss"></i><span data-en="Essays and logs" data-zh="文章与日志">Essays and logs</span></li>
+        </ul>
+      </aside>
+
+      <article class="content page-stack">
+        <header class="page-title">
+          <p class="kicker" data-en="Field notes" data-zh="研究札记">Field notes</p>
+          <h1 data-en="Blog" data-zh="博客">Blog</h1>
+        </header>
+        <section class="post-list">
+          <article>
+            <time datetime="2026-06-08">2026-06-08</time>
+            <h2 data-en="Designing small tools for messy data" data-zh="为混乱数据设计小工具">Designing small tools for messy data</h2>
+            <p
+              data-en="A note on why narrow diagnostic tools can make research loops calmer and more inspectable."
+              data-zh="一篇关于窄而专注的诊断工具如何让研究循环更安静、更可审查的笔记。"
+            >
+              A note on why narrow diagnostic tools can make research loops calmer and more inspectable.
+            </p>
+          </article>
+          <article>
+            <time datetime="2026-05-20">2026-05-20</time>
+            <h2 data-en="What I want from a research homepage" data-zh="我希望研究主页呈现什么">What I want from a research homepage</h2>
+            <p
+              data-en="Clear identity, current work, durable links, and enough context for future collaborators."
+              data-zh="清晰身份、当前工作、稳定链接，以及给未来合作者的足够上下文。"
+            >
+              Clear identity, current work, durable links, and enough context for future collaborators.
+            </p>
+          </article>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div><strong>Tianxiao Shao</strong><span data-en="Blog" data-zh="博客">Blog</span></div>
+      <a href="../"><i data-lucide="arrow-left"></i><span data-en="Research" data-zh="研究">Research</span></a>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Personal academic homepage for research, publications, projects, running notes, blog posts, and CV."
+    />
+    <title>Tianxiao Shao | Academic Homepage</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script>
+      (function () {
+        var theme = localStorage.getItem("theme") || "light";
+        var lang = localStorage.getItem("language") || "en";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.setAttribute("lang", lang);
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="masthead__inner">
+        <a class="brand" href="./">Tianxiao Shao</a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a class="is-active" href="./" data-en="Research" data-zh="研究">Research</a>
+          <a href="publications/" data-en="Publications" data-zh="论文发表">Publications</a>
+          <a href="running/" data-en="Running" data-zh="跑步">Running</a>
+          <a href="blog/" data-en="Blog" data-zh="博客">Blog</a>
+          <a href="cv/" data-en="CV" data-zh="简历">CV</a>
+          <button class="icon-button lang-toggle" type="button" aria-label="Toggle language">
+            <span id="lang-label">EN</span>
+          </button>
+          <button class="icon-button theme-toggle" type="button" aria-label="Toggle theme">
+            <i data-lucide="moon"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="layout">
+      <aside class="profile-card" aria-label="Author profile">
+        <img class="avatar" src="assets/img/avatar.svg" alt="Portrait avatar for Tianxiao Shao" />
+        <h1>Tianxiao Shao</h1>
+        <p
+          class="bio"
+          data-en="Student researcher and builder interested in AI systems, computer vision, and human-centered tools."
+          data-zh="学生研究者与工具构建者，关注 AI 系统、计算机视觉与以人为中心的交互工具。"
+        >
+          Student researcher and builder interested in AI systems, computer vision, and human-centered tools.
+        </p>
+        <ul class="profile-list">
+          <li><i data-lucide="map-pin"></i><span data-en="China" data-zh="中国">China</span></li>
+          <li><i data-lucide="building-2"></i><span data-en="Independent Lab" data-zh="独立实验室">Independent Lab</span></li>
+          <li><i data-lucide="mail"></i><a href="mailto:hello@example.com">Email</a></li>
+          <li><i data-lucide="github"></i><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          <li><i data-lucide="graduation-cap"></i><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+        </ul>
+      </aside>
+
+      <article class="content">
+        <section class="hero-section">
+          <div class="hero-copy">
+            <p class="kicker" data-en="Academic Portfolio | Research Homepage" data-zh="学术作品集 | 研究主页">
+              Academic Portfolio | Research Homepage
+            </p>
+            <h2 data-en="About" data-zh="关于我">About</h2>
+            <p
+              class="intro"
+              data-en="I work on practical AI systems that connect perception, reasoning, and action. My recent interests include world models, vision-language interfaces, and tools that make research workflows more reliable."
+              data-zh="我关注将感知、推理与行动连接起来的实用 AI 系统。近期兴趣包括世界模型、视觉语言接口，以及让研究流程更可靠的工具。"
+            >
+              I work on practical AI systems that connect perception, reasoning, and action. My recent interests include
+              <strong>world models</strong>, <strong>vision-language interfaces</strong>, and tools that make research
+              workflows more reliable.
+            </p>
+            <div class="pill-row" aria-label="Research tags">
+              <span data-en="World Models" data-zh="世界模型">World Models</span>
+              <span data-en="Computer Vision" data-zh="计算机视觉">Computer Vision</span>
+              <span data-en="Research Tools" data-zh="研究工具">Research Tools</span>
+            </div>
+          </div>
+          <img class="research-visual" src="assets/img/research-panel.svg" alt="Abstract research system diagram" />
+        </section>
+
+        <section class="signal-grid" aria-label="Research signals">
+          <div>
+            <span data-en="Focus" data-zh="方向">Focus</span>
+            <strong data-en="AI Systems" data-zh="AI 系统">AI Systems</strong>
+          </div>
+          <div>
+            <span data-en="Mode" data-zh="模式">Mode</span>
+            <strong data-en="Vision + Reasoning" data-zh="视觉 + 推理">Vision + Reasoning</strong>
+          </div>
+          <div>
+            <span data-en="Output" data-zh="产出">Output</span>
+            <strong data-en="Papers + Tools" data-zh="论文 + 工具">Papers + Tools</strong>
+          </div>
+          <div>
+            <span data-en="Base" data-zh="地点">Base</span>
+            <strong data-en="China" data-zh="中国">China</strong>
+          </div>
+        </section>
+
+        <section class="panel reveal">
+          <div class="panel-heading">
+            <p data-en="Research vectors" data-zh="研究向量">Research vectors</p>
+            <h2 data-en="Research Focus" data-zh="研究方向">Research Focus</h2>
+          </div>
+          <div class="focus-grid">
+            <article>
+              <span>01</span>
+              <h3 data-en="Learning Dynamics" data-zh="动态建模">Learning Dynamics</h3>
+              <p
+                data-en="Models that understand how scenes evolve over time, support prediction, and help agents plan with uncertainty."
+                data-zh="理解场景如何随时间演化的模型，用于预测、规划，并帮助智能体在不确定环境中行动。"
+              >
+                Models that understand how scenes evolve over time, support prediction, and help agents plan with uncertainty.
+              </p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3 data-en="Vision for Interaction" data-zh="交互视觉">Vision for Interaction</h3>
+              <p
+                data-en="Perception systems that translate visual observations into actionable feedback for robotics, AR, and creative tools."
+                data-zh="将视觉观察转化为可操作反馈的感知系统，服务于机器人、AR 与创作工具。"
+              >
+                Perception systems that translate visual observations into actionable feedback for robotics, AR, and creative tools.
+              </p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3 data-en="Reliable Tooling" data-zh="可靠工具链">Reliable Tooling</h3>
+              <p
+                data-en="Small, inspectable systems for diagnostics, evaluation, data capture, and repeatable research workflows."
+                data-zh="用于诊断、评测、数据采集与可复现实验流程的小型、可审查系统。"
+              >
+                Small, inspectable systems for diagnostics, evaluation, data capture, and repeatable research workflows.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel reveal">
+          <div class="panel-heading">
+            <p data-en="Recent output" data-zh="近期工作">Recent output</p>
+            <h2 data-en="Recent Work" data-zh="近期工作">Recent Work</h2>
+          </div>
+          <div class="project-list">
+            <article class="project-card">
+              <div>
+                <span data-en="Toolkit" data-zh="工具包">Toolkit</span>
+                <h3 data-en="Realtime Pose Toolkit" data-zh="Realtime Pose Toolkit">Realtime Pose Toolkit</h3>
+              </div>
+              <p
+                data-en="A compact workflow for capturing, streaming, and inspecting pose data from mobile devices."
+                data-zh="一个用于从移动设备采集、传输并检查姿态数据的紧凑工作流。"
+              >
+                A compact workflow for capturing, streaming, and inspecting pose data from mobile devices.
+              </p>
+              <a class="project-link" href="https://github.com/" target="_blank" rel="noopener">
+                <span data-en="View on GitHub" data-zh="在 GitHub 上查看">View on GitHub</span>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </article>
+            <article class="project-card">
+              <div>
+                <span data-en="Diagnostics" data-zh="诊断工具">Diagnostics</span>
+                <h3 data-en="Stream Health Monitor" data-zh="Stream Health Monitor">Stream Health Monitor</h3>
+              </div>
+              <p
+                data-en="A dashboard for measuring latency, packet gaps, jitter, and rolling throughput in real time."
+                data-zh="一个用于实时测量延迟、丢包、抖动与滚动吞吐量的诊断面板。"
+              >
+                A dashboard for measuring latency, packet gaps, jitter, and rolling throughput in real time.
+              </p>
+              <a class="project-link" href="https://github.com/" target="_blank" rel="noopener">
+                <span data-en="View on GitHub" data-zh="在 GitHub 上查看">View on GitHub</span>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </article>
+            <article class="project-card">
+              <div>
+                <span data-en="Evaluation" data-zh="评测工具">Evaluation</span>
+                <h3 data-en="Trajectory Evaluation Bench" data-zh="Trajectory Evaluation Bench">Trajectory Evaluation Bench</h3>
+              </div>
+              <p
+                data-en="Offline plots, alignment utilities, and metrics for comparing motion traces against reference logs."
+                data-zh="用于将运动轨迹与参考日志比较的离线绘图、对齐工具与指标集合。"
+              >
+                Offline plots, alignment utilities, and metrics for comparing motion traces against reference logs.
+              </p>
+              <a class="project-link" href="https://github.com/" target="_blank" rel="noopener">
+                <span data-en="View on GitHub" data-zh="在 GitHub 上查看">View on GitHub</span>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </article>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>Tianxiao Shao</strong>
+        <span data-en="Personal academic homepage" data-zh="个人学术主页">Personal academic homepage</span>
+      </div>
+      <a href="https://github.com/" target="_blank" rel="noopener">
+        <i data-lucide="github"></i>
+        <span>GitHub</span>
+      </a>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV | Tianxiao Shao</title>
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script>
+      (function () {
+        document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "light");
+        document.documentElement.setAttribute("lang", localStorage.getItem("language") || "en");
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="masthead__inner">
+        <a class="brand" href="../">Tianxiao Shao</a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="../" data-en="Research" data-zh="研究">Research</a>
+          <a href="../publications/" data-en="Publications" data-zh="论文发表">Publications</a>
+          <a href="../running/" data-en="Running" data-zh="跑步">Running</a>
+          <a href="../blog/" data-en="Blog" data-zh="博客">Blog</a>
+          <a class="is-active" href="./" data-en="CV" data-zh="简历">CV</a>
+          <button class="icon-button lang-toggle" type="button" aria-label="Toggle language"><span id="lang-label">EN</span></button>
+          <button class="icon-button theme-toggle" type="button" aria-label="Toggle theme"><i data-lucide="moon"></i></button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="profile-card compact" aria-label="Author profile">
+        <img class="avatar" src="../assets/img/avatar.svg" alt="Portrait avatar for Tianxiao Shao" />
+        <h1>Tianxiao Shao</h1>
+        <p class="bio" data-en="AI systems, vision, and research tooling." data-zh="AI 系统、视觉与研究工具链。">AI systems, vision, and research tooling.</p>
+        <ul class="profile-list">
+          <li><i data-lucide="mail"></i><a href="mailto:hello@example.com">Email</a></li>
+          <li><i data-lucide="github"></i><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </aside>
+
+      <article class="content page-stack">
+        <header class="page-title cv-header">
+          <div>
+            <p class="kicker" data-en="Curriculum vitae" data-zh="个人简历">Curriculum vitae</p>
+            <h1 data-en="CV" data-zh="简历">CV</h1>
+          </div>
+          <a class="download-link" href="#" aria-label="Download CV">
+            <i data-lucide="download"></i>
+            <span data-en="Download" data-zh="下载">Download</span>
+          </a>
+        </header>
+
+        <section class="cv-section">
+          <h2 data-en="Education" data-zh="教育经历">Education</h2>
+          <article>
+            <span>2024 - Present</span>
+            <div>
+              <h3 data-en="Undergraduate Studies" data-zh="本科阶段">Undergraduate Studies</h3>
+              <p data-en="Computer science, AI systems, and applied research." data-zh="计算机科学、AI 系统与应用研究。">
+                Computer science, AI systems, and applied research.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="cv-section">
+          <h2 data-en="Experience" data-zh="经历">Experience</h2>
+          <article>
+            <span>2025 - Present</span>
+            <div>
+              <h3 data-en="Research Tooling Projects" data-zh="研究工具项目">Research Tooling Projects</h3>
+              <p
+                data-en="Built small systems for capture, diagnostics, evaluation, and documentation."
+                data-zh="构建用于采集、诊断、评测与文档整理的小型系统。"
+              >
+                Built small systems for capture, diagnostics, evaluation, and documentation.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="cv-section">
+          <h2 data-en="Skills" data-zh="技能">Skills</h2>
+          <div class="skill-cloud">
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>Computer Vision</span>
+            <span>Data Tools</span>
+            <span>Research Writing</span>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div><strong>Tianxiao Shao</strong><span data-en="CV" data-zh="简历">CV</span></div>
+      <a href="../"><i data-lucide="arrow-left"></i><span data-en="Research" data-zh="研究">Research</span></a>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

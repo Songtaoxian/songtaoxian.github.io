@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Running | Tianxiao Shao</title>
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script>
+      (function () {
+        document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "light");
+        document.documentElement.setAttribute("lang", localStorage.getItem("language") || "en");
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="masthead__inner">
+        <a class="brand" href="../">Tianxiao Shao</a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="../" data-en="Research" data-zh="研究">Research</a>
+          <a href="../publications/" data-en="Publications" data-zh="论文发表">Publications</a>
+          <a class="is-active" href="./" data-en="Running" data-zh="跑步">Running</a>
+          <a href="../blog/" data-en="Blog" data-zh="博客">Blog</a>
+          <a href="../cv/" data-en="CV" data-zh="简历">CV</a>
+          <button class="icon-button lang-toggle" type="button" aria-label="Toggle language"><span id="lang-label">EN</span></button>
+          <button class="icon-button theme-toggle" type="button" aria-label="Toggle theme"><i data-lucide="moon"></i></button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="profile-card compact" aria-label="Author profile">
+        <img class="avatar" src="../assets/img/avatar.svg" alt="Portrait avatar for Tianxiao Shao" />
+        <h1>Tianxiao Shao</h1>
+        <p class="bio" data-en="Research by day, easy miles when the schedule allows." data-zh="白天做研究，时间允许时跑几公里。">
+          Research by day, easy miles when the schedule allows.
+        </p>
+        <ul class="profile-list">
+          <li><i data-lucide="timer"></i><span data-en="Steady training" data-zh="稳定训练">Steady training</span></li>
+          <li><i data-lucide="activity"></i><span data-en="Road and trail" data-zh="公路与越野">Road and trail</span></li>
+        </ul>
+      </aside>
+
+      <article class="content page-stack">
+        <header class="page-title">
+          <p class="kicker" data-en="Personal log" data-zh="个人记录">Personal log</p>
+          <h1 data-en="Running" data-zh="跑步">Running</h1>
+        </header>
+        <section class="stats-grid">
+          <div><span data-en="Current goal" data-zh="当前目标">Current goal</span><strong>10K</strong></div>
+          <div><span data-en="Weekly rhythm" data-zh="每周节奏">Weekly rhythm</span><strong>3-4</strong></div>
+          <div><span data-en="Favorite run" data-zh="喜欢的路线">Favorite run</span><strong data-en="Riverside" data-zh="河边">Riverside</strong></div>
+        </section>
+        <section class="timeline">
+          <article>
+            <span>2026</span>
+            <h2 data-en="Building consistency" data-zh="建立稳定性">Building consistency</h2>
+            <p
+              data-en="Short weekday runs, one longer weekend run, and enough recovery to keep research and training both sustainable."
+              data-zh="工作日短跑，周末一次长距离，并保留足够恢复，让研究和训练都可持续。"
+            >
+              Short weekday runs, one longer weekend run, and enough recovery to keep research and training both sustainable.
+            </p>
+          </article>
+          <article>
+            <span>2025</span>
+            <h2 data-en="Learning pacing" data-zh="学习配速">Learning pacing</h2>
+            <p
+              data-en="A year of easier runs, better sleep, and paying attention to how small habits compound."
+              data-zh="用更轻松的跑步、更好的睡眠，观察小习惯如何累积成结果。"
+            >
+              A year of easier runs, better sleep, and paying attention to how small habits compound.
+            </p>
+          </article>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div><strong>Tianxiao Shao</strong><span data-en="Running log" data-zh="跑步记录">Running log</span></div>
+      <a href="../"><i data-lucide="arrow-left"></i><span data-en="Research" data-zh="研究">Research</span></a>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

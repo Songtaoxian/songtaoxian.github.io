@@ -1,0 +1,13 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Tianxiao Shao avatar</title>
+  <desc id="desc">A clean geometric portrait avatar for an academic homepage.</desc>
+  <rect width="512" height="512" rx="256" fill="#EDF5F2"/>
+  <circle cx="256" cy="206" r="92" fill="#C85C3C"/>
+  <path d="M146 434C159 355 201 318 256 318C311 318 353 355 366 434H146Z" fill="#087F74"/>
+  <path d="M166 190C178 116 222 76 282 82C337 88 379 132 384 190C345 169 305 159 264 160C223 161 184 171 166 190Z" fill="#17211E"/>
+  <circle cx="221" cy="210" r="10" fill="#17211E"/>
+  <circle cx="295" cy="210" r="10" fill="#17211E"/>
+  <path d="M225 258C243 274 273 274 291 258" stroke="#17211E" stroke-width="12" stroke-linecap="round"/>
+  <path d="M182 376C204 350 232 337 256 337C280 337 308 350 330 376" stroke="#EDF5F2" stroke-width="14" stroke-linecap="round"/>
+  <path d="M389 122L421 104L414 140L446 154L411 162L407 198L388 168L352 177L376 150L356 120L389 122Z" fill="#B78916"/>
+</svg>

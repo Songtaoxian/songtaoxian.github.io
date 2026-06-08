@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Publications | Tianxiao Shao</title>
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script>
+      (function () {
+        document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "light");
+        document.documentElement.setAttribute("lang", localStorage.getItem("language") || "en");
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="masthead__inner">
+        <a class="brand" href="../">Tianxiao Shao</a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="../" data-en="Research" data-zh="研究">Research</a>
+          <a class="is-active" href="./" data-en="Publications" data-zh="论文发表">Publications</a>
+          <a href="../running/" data-en="Running" data-zh="跑步">Running</a>
+          <a href="../blog/" data-en="Blog" data-zh="博客">Blog</a>
+          <a href="../cv/" data-en="CV" data-zh="简历">CV</a>
+          <button class="icon-button lang-toggle" type="button" aria-label="Toggle language"><span id="lang-label">EN</span></button>
+          <button class="icon-button theme-toggle" type="button" aria-label="Toggle theme"><i data-lucide="moon"></i></button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="profile-card compact" aria-label="Author profile">
+        <img class="avatar" src="../assets/img/avatar.svg" alt="Portrait avatar for Tianxiao Shao" />
+        <h1>Tianxiao Shao</h1>
+        <p class="bio" data-en="AI systems, vision, and research tooling." data-zh="AI 系统、视觉与研究工具链。">AI systems, vision, and research tooling.</p>
+        <ul class="profile-list">
+          <li><i data-lucide="mail"></i><a href="mailto:hello@example.com">Email</a></li>
+          <li><i data-lucide="github"></i><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          <li><i data-lucide="graduation-cap"></i><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+        </ul>
+      </aside>
+
+      <article class="content page-stack">
+        <header class="page-title">
+          <p class="kicker" data-en="Selected work" data-zh="代表性成果">Selected work</p>
+          <h1 data-en="Publications" data-zh="论文发表">Publications</h1>
+        </header>
+
+        <section class="publication-list">
+          <article class="publication">
+            <span class="year">2026</span>
+            <div>
+              <h2 data-en="Learning Actionable Dynamics from Visual Streams" data-zh="从视觉流中学习可行动动态">
+                Learning Actionable Dynamics from Visual Streams
+              </h2>
+              <p data-en="Tianxiao Shao, Collaborators. Manuscript in preparation." data-zh="Tianxiao Shao，与合作者。手稿准备中。">
+                Tianxiao Shao, Collaborators. Manuscript in preparation.
+              </p>
+              <div class="link-row">
+                <a href="#" aria-label="Paper PDF"><i data-lucide="file-text"></i> PDF</a>
+                <a href="#" aria-label="Project page"><i data-lucide="external-link"></i> Project</a>
+                <a href="#" aria-label="Code repository"><i data-lucide="github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication">
+            <span class="year">2025</span>
+            <div>
+              <h2 data-en="A Diagnostic Toolkit for Mobile Pose Streams" data-zh="移动端姿态流诊断工具包">
+                A Diagnostic Toolkit for Mobile Pose Streams
+              </h2>
+              <p data-en="Workshop note on robust data capture and stream evaluation." data-zh="关于稳健数据采集与流式评测的工作坊笔记。">
+                Workshop note on robust data capture and stream evaluation.
+              </p>
+              <div class="link-row">
+                <a href="#" aria-label="Paper PDF"><i data-lucide="file-text"></i> PDF</a>
+                <a href="#" aria-label="Code repository"><i data-lucide="github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div><strong>Tianxiao Shao</strong><span data-en="Publications" data-zh="论文发表">Publications</span></div>
+      <a href="../"><i data-lucide="arrow-left"></i><span data-en="Research" data-zh="研究">Research</span></a>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
