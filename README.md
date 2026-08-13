@@ -6,7 +6,7 @@ This is a static personal academic homepage inspired by the structure of an Acad
 
 - `index.html`: research homepage
 - `publications/`: publications
-- `running/`: daily life log
+- `daily/`: daily life log
 - `blog/`: notes and posts
 - `cv/`: CV
 
