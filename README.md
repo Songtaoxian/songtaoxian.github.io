@@ -2,7 +2,7 @@
 
 This is a static personal academic homepage inspired by the structure of an AcademicPages-style profile site.
 
-## Pages
+## Pages(example)
 
 - `index.html`: research homepage
 - `publications/`: publications
@@ -14,8 +14,8 @@ This is a static personal academic homepage inspired by the structure of an Acad
 
 Edit the text in the HTML files and replace:
 
-- `Tianxiao Shao`
-- `hello@example.com`
+- `Tianxiao Shao`(example)
+- `shaotianxiao@westlake.eud.cn`(example)
 - GitHub and Google Scholar URLs
 - publication/project titles
 - `assets/img/avatar.jpg`
