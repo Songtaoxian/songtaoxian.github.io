@@ -18,7 +18,7 @@ Edit the text in the HTML files and replace:
 - `hello@example.com`
 - GitHub and Google Scholar URLs
 - publication/project titles
-- `assets/img/avatar.svg`
+- `assets/img/avatar.jpg`
 
 ## Publish With GitHub Pages
 
