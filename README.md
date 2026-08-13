@@ -14,8 +14,8 @@ This is a static personal academic homepage inspired by the structure of an Acad
 
 Edit the text in the HTML files and replace:
 
-- `Tianxiao Shao`(example)
-- `shaotianxiao@westlake.eud.cn`(example)
+- `Tianxiao Shao` (example)
+- `shaotianxiao@westlake.edu.cn` (example)
 - GitHub and Google Scholar URLs
 - publication/project titles
 - `assets/img/avatar.jpg`
