@@ -64,6 +64,40 @@
     });
   }
 
+  function enableMagnets() {
+    document.querySelectorAll(".achievement-magnet").forEach(function (magnet) {
+      var dragging = false;
+      var offsetX = 0;
+      var offsetY = 0;
+
+      magnet.addEventListener("pointerdown", function (event) {
+        dragging = true;
+        var rect = magnet.getBoundingClientRect();
+        offsetX = event.clientX - rect.left;
+        offsetY = event.clientY - rect.top;
+        magnet.classList.add("is-dragging");
+        magnet.setPointerCapture(event.pointerId);
+      });
+
+      magnet.addEventListener("pointermove", function (event) {
+        if (!dragging) return;
+        var board = magnet.parentElement.getBoundingClientRect();
+        var left = Math.max(8, Math.min(event.clientX - board.left - offsetX, board.width - magnet.offsetWidth - 8));
+        var top = Math.max(8, Math.min(event.clientY - board.top - offsetY, board.height - magnet.offsetHeight - 8));
+        magnet.style.left = left + "px";
+        magnet.style.top = top + "px";
+        magnet.style.setProperty("--r", "0deg");
+      });
+
+      function stopDragging() {
+        dragging = false;
+        magnet.classList.remove("is-dragging");
+      }
+      magnet.addEventListener("pointerup", stopDragging);
+      magnet.addEventListener("pointercancel", stopDragging);
+    });
+  }
+
   document.querySelectorAll(".lang-toggle").forEach(function (button) {
     button.addEventListener("click", function () {
       applyLanguage(lang === "en" ? "zh" : "en");
@@ -87,5 +121,6 @@
   applyLanguage(lang);
   applyTheme(theme);
   revealSections();
+  enableMagnets();
   renderIcons();
 })();

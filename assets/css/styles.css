@@ -536,6 +536,109 @@ button {
   transform: translateY(0);
 }
 
+/* Cyber fridge achievement wall */
+.fridge-page {
+  width: min(var(--max-width), calc(100% - 40px));
+  margin: 44px auto 60px;
+}
+
+.fridge-intro {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 26px;
+}
+
+.fridge-intro h1 {
+  margin: 4px 0 0;
+  font-size: clamp(2.6rem, 7vw, 5.6rem);
+  line-height: 0.92;
+  letter-spacing: -0.05em;
+}
+
+.fridge-intro > p {
+  max-width: 42ch;
+  margin: 0;
+  color: var(--muted);
+}
+
+.fridge {
+  position: relative;
+  min-height: 680px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--line) 70%, #8ba39b);
+  border-radius: 22px;
+  background:
+    linear-gradient(105deg, transparent 0 48%, rgba(255,255,255,.3) 50%, transparent 52%),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.025) 0 1px, rgba(0,0,0,.018) 1px 3px),
+    #d8e0dd;
+  box-shadow: inset 0 1px 0 #fff, inset -12px 0 35px rgba(40,58,53,.12), 0 30px 80px rgba(24,40,36,.16);
+}
+
+[data-theme="dark"] .fridge {
+  background: linear-gradient(105deg, transparent 0 48%, rgba(255,255,255,.04) 50%, transparent 52%), #323c39;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.12), inset -12px 0 35px rgba(0,0,0,.2), 0 30px 80px rgba(0,0,0,.28);
+}
+
+.fridge::after {
+  content: "";
+  position: absolute;
+  inset: 52% 0 auto;
+  height: 5px;
+  background: rgba(40,58,53,.18);
+  box-shadow: 0 2px 7px rgba(0,0,0,.15);
+}
+
+.fridge__brand { position: absolute; top: 25px; left: 28px; display: flex; align-items: center; gap: 9px; color: #52635e; }
+.fridge__brand span { padding: 3px 8px; border: 2px solid currentColor; font-weight: 900; letter-spacing: .12em; }
+.fridge__brand small { font-size: .58rem; letter-spacing: .18em; font-weight: 800; }
+.fridge__display { position: absolute; top: 24px; right: 28px; width: 142px; padding: 10px 13px; display: flex; justify-content: space-between; align-items: center; border-radius: 6px; background: #142a27; color: #66ffe6; box-shadow: inset 0 0 18px rgba(102,255,230,.15); font-family: ui-monospace, monospace; }
+.fridge__display span { font-size: .52rem; letter-spacing: .09em; }
+.fridge__display strong { font-size: 1.1rem; text-shadow: 0 0 9px currentColor; }
+
+.achievement-magnet {
+  --r: 0deg;
+  position: absolute;
+  z-index: 4;
+  left: var(--x);
+  top: var(--y);
+  width: min(370px, calc(100% - 32px));
+  padding: 28px;
+  touch-action: none;
+  user-select: none;
+  cursor: grab;
+  transform: rotate(var(--r));
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  color: #eafff9;
+  border: 1px solid rgba(130,255,228,.52);
+  border-radius: 4px 18px 4px 18px;
+  background: linear-gradient(145deg, #0e3b35, #081e1b);
+  box-shadow: 7px 10px 0 rgba(11,32,29,.17), 0 20px 45px rgba(11,32,29,.28), inset 0 0 30px rgba(45,255,213,.06);
+}
+
+.achievement-magnet:hover { transform: rotate(0) translateY(-4px); }
+.achievement-magnet.is-dragging { z-index: 10; cursor: grabbing; transform: rotate(0) scale(1.02); box-shadow: 12px 18px 45px rgba(11,32,29,.36); }
+.achievement-magnet::before { content: ""; position: absolute; inset: 9px; border: 1px dashed rgba(130,255,228,.25); pointer-events: none; }
+.magnet-pin { position: absolute; top: 12px; right: 14px; width: 18px; height: 18px; border-radius: 50%; background: #ff6f4f; box-shadow: inset -3px -3px 0 rgba(91,20,5,.28), 0 3px 6px rgba(0,0,0,.35); }
+.achievement-icon { width: 48px; height: 48px; display: grid; place-items: center; margin-bottom: 20px; border: 1px solid #63f0d3; color: #63f0d3; border-radius: 50%; }
+.achievement-icon svg { width: 24px; }
+.achievement-type { margin: 0 0 5px; color: #63f0d3; font: 700 .68rem/1.2 ui-monospace, monospace; letter-spacing: .13em; text-transform: uppercase; }
+.achievement-magnet h2 { max-width: 12ch; margin: 0; font-size: clamp(1.7rem, 4vw, 2.45rem); line-height: .98; text-transform: uppercase; }
+.achievement-distance { margin: 18px 0 8px; color: #ffb299; font: 800 2rem/1 ui-monospace, monospace; }
+.achievement-distance small { font-size: .75rem; }
+.achievement-note { margin: 0; max-width: 33ch; color: #b7d6cf; font-size: .88rem; }
+.achievement-magnet footer { margin-top: 22px; padding-top: 12px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(130,255,228,.22); color: #63f0d3; font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; }
+.achievement-magnet footer svg { width: 16px; }
+
+.fridge-note { position: absolute; z-index: 3; left: var(--x); top: var(--y); width: 210px; min-height: 145px; padding: 28px 22px; display: grid; place-items: center; transform: rotate(var(--r)); background: #fff1a8; color: #433d25; font: 700 1.05rem/1.45 ui-monospace, monospace; box-shadow: 5px 8px 16px rgba(39,50,46,.18); }
+.fridge-note::before { content: ""; position: absolute; width: 65px; height: 20px; top: -7px; background: rgba(255,255,255,.55); transform: rotate(-4deg); }
+.pixel-magnet { position: absolute; z-index: 2; display: grid; place-items: center; color: #fff; font-weight: 900; box-shadow: 4px 6px 12px rgba(35,47,43,.2); }
+.pixel-magnet--one { left: 76%; top: 67%; width: 74px; height: 74px; border-radius: 18px; transform: rotate(9deg); background: #e76647; font-size: 2.2rem; }
+.pixel-magnet--two { left: 48%; top: 73%; width: 56px; height: 56px; border-radius: 50%; transform: rotate(-8deg); background: #087f74; font-family: ui-monospace, monospace; }
+.fridge-hint { position: absolute; z-index: 3; left: 28px; bottom: 22px; margin: 0; display: flex; align-items: center; gap: 8px; color: #52635e; font-size: .76rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.fridge-hint svg { width: 16px; }
+
 @media (max-width: 980px) {
   .layout {
     grid-template-columns: 1fr;
@@ -667,4 +770,14 @@ button {
     align-items: start;
     flex-direction: column;
   }
+
+  .fridge-page { width: min(100% - 24px, var(--max-width)); margin-top: 30px; }
+  .fridge-intro { display: grid; gap: 16px; }
+  .fridge { min-height: 760px; }
+  .fridge__display { display: none; }
+  .achievement-magnet { left: 16px !important; top: 110px !important; }
+  .fridge-note { left: auto; right: 22px; top: 530px; }
+  .pixel-magnet--one { left: 22px; top: 570px; }
+  .pixel-magnet--two { left: 42%; top: 655px; }
+}
 }

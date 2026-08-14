@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A cyber fridge door collecting Tianxiao Shao's personal achievements and life milestones." />
+    <title>Cyber Fridge | Tianxiao Shao</title>
+    <link rel="icon" href="../assets/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script>
+      (function () {
+        document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "light");
+        document.documentElement.setAttribute("lang", localStorage.getItem("language") || "en");
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="masthead__inner">
+        <a class="brand" href="../">Tianxiao Shao</a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="../" data-en="Research" data-zh="研究">Research</a>
+          <a href="../publications/" data-en="Publications" data-zh="论文发表">Publications</a>
+          <a href="../running/" data-en="Daily Life" data-zh="日常">Daily Life</a>
+          <a class="is-active" href="./" data-en="Achievements" data-zh="成就墙">Achievements</a>
+          <a href="../blog/" data-en="Blog" data-zh="博客">Blog</a>
+          <a href="../cv/" data-en="CV" data-zh="简历">CV</a>
+          <button class="icon-button lang-toggle" type="button" aria-label="Toggle language"><span id="lang-label">EN</span></button>
+          <button class="icon-button theme-toggle" type="button" aria-label="Toggle theme"><i data-lucide="moon"></i></button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="fridge-page">
+      <header class="fridge-intro">
+        <div>
+          <p class="kicker" data-en="Proof that I was here" data-zh="我来过，也做到过">Proof that I was here</p>
+          <h1 data-en="Cyber Fridge" data-zh="赛博冰箱贴">Cyber Fridge</h1>
+        </div>
+        <p data-en="A door full of small wins, brave firsts, and moments worth keeping. Drag the magnets around." data-zh="把小小的胜利、勇敢的第一次和值得珍藏的瞬间，都贴在这里。磁贴可以拖动哦。">
+          A door full of small wins, brave firsts, and moments worth keeping. Drag the magnets around.
+        </p>
+      </header>
+
+      <section class="fridge" aria-label="Achievement magnets">
+        <div class="fridge__shine" aria-hidden="true"></div>
+        <div class="fridge__brand"><span>STX</span><small>MEMORY UNIT</small></div>
+        <div class="fridge__display" aria-hidden="true"><span>ACHIEVEMENTS</span><strong>001</strong></div>
+
+        <article class="achievement-magnet achievement-magnet--run" tabindex="0" style="--x: 13%; --y: 22%; --r: -4deg;">
+          <span class="magnet-pin" aria-hidden="true"></span>
+          <div class="achievement-icon" aria-hidden="true"><i data-lucide="medal"></i></div>
+          <p class="achievement-type" data-en="Endurance unlocked" data-zh="耐力成就解锁">Endurance unlocked</p>
+          <h2 data-en="Half Marathon Finisher" data-zh="完成半程马拉松">Half Marathon Finisher</h2>
+          <p class="achievement-distance">21.0975 <small>KM</small></p>
+          <p class="achievement-note" data-en="One step, then another — all the way to the finish line." data-zh="一步，再一步，直到终点。">
+            One step, then another — all the way to the finish line.
+          </p>
+          <footer><span data-en="Personal milestone" data-zh="个人里程碑">Personal milestone</span><i data-lucide="flag"></i></footer>
+        </article>
+
+        <div class="fridge-note" style="--x: 62%; --y: 29%; --r: 3deg;">
+          <span data-en="More magnets coming soon ✦" data-zh="更多磁贴，正在路上 ✦">More magnets coming soon ✦</span>
+        </div>
+        <div class="pixel-magnet pixel-magnet--one" aria-hidden="true">★</div>
+        <div class="pixel-magnet pixel-magnet--two" aria-hidden="true">01</div>
+        <p class="fridge-hint"><i data-lucide="move"></i><span data-en="Drag to rearrange" data-zh="拖动磁贴，自由排列">Drag to rearrange</span></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div><strong>Tianxiao Shao</strong><span data-en="A growing collection of wins" data-zh="持续增加的成就收藏">A growing collection of wins</span></div>
+      <a href="../"><i data-lucide="arrow-left"></i><span data-en="Research" data-zh="研究">Research</span></a>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
